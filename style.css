@@ -1,0 +1,105 @@
+body{
+margin: 0;
+padding: 0;
+background-color: darkgray;
+}
+
+h1 {
+background-image: linear-gradient( transparent calc(100% - 5%), #0074ff 0px );
+font-size: 2.5em;
+display: inline-table;
+
+}
+
+header{
+display: flex;
+background-color: cadetblue;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+img{
+width: 150px;
+height: 150px;
+}
+
+#jokes{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: row;
+ max-width: 80vw;
+ margin: auto;
+ flex-flow: wrap;
+ padding: 20px;
+}
+
+
+#joke{
+max-width: 100%;
+justify-content: center;
+
+
+}
+
+blockquote{
+ position: relative;
+ max-width: 80%;
+ padding: 1.5em 3em 1.4em 3em;
+ text-align: center;
+ font-size: 1em;
+ background-color: #e8e5e5;
+ border-left: #e03939 8px solid;
+ border-radius: 10px;
+ 
+}
+
+ blockquote::before {
+ content: "\201C";
+ font-family: arial;
+ top: -4px;
+ left: 20px;
+ font-size: 2em;
+ color: #e03939;
+ 
+}
+
+
+button{
+ margin: 0.3em;
+ background-color: #e03939;
+ color: whitesmoke;
+ padding: 1em;
+ border-radius: 6px;
+ border: none;
+ display: flex;
+ justify-content: center;
+}
+
+
+.search-box{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,50%);
+ background: #2f3640;
+ height: 20px;
+ border-radius: 40px;
+ padding: 10px;
+}
+
+
+
+
+input.searh-text{
+ border: none;
+ background: none;
+ outline: none;
+ float: left;
+ color: rgb(214, 26, 26);
+ font-size: 16px;
+ transition: 0.4s;
+ line-height: 10px;
+ width: 200px;
+}
