@@ -6,34 +6,106 @@ background-color: darkgray;
 
 h1 {
 background-image: linear-gradient( transparent calc(100% - 5%), #0074ff 0px );
-font-size: 2.5em;
+font-size: 1em;
 display: inline-table;
+color: white;
+margin-left: 10px;
 
 }
 
 header{
-display: flex;
-background-color: cadetblue;
-align-items: center;
-justify-content: center;
-flex-direction: column;
+ background-color: rgb(29, 28, 28);
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ height: 40px;
+ font-family: "Kalam", cursive;
+ border-bottom: black 2px solid;
+ width: 100%;
+ position: fixed;
+}
+
+
+
+.hero {
+ position:absolute;
+ z-index:-1;
+ top:0;
+ left:0;
+ width:100%; 
+ /* height:100vh; */
+}
+
+.hero-video{
+ z-index:-1;
+ top:0;
+ left:0;
+ width:100%; 
+ border-radius: red 2px solid;
+ }
+
+
+
+
+nav a{
+ font-family: 'Poppins', sans-serif;
+ font-style: normal;
+ font-weight: 700;
+ font-size: 14px;
+ font-size: 0.875rem;
+ letter-spacing: 0.1rem;
+ text-decoration: none;
+ text-transform: uppercase;
+ color: white;
+  
+}
+
+
+
+
+
+.nav-image{
+text-align: center;
 
 }
-img{
-width: 150px;
-height: 150px;
+
+nav{
+ margin: auto;
 }
+
+
+img{
+ width: 150px;
+ height: 150px;
+}
+
+.portrait{
+ width:70px;
+ height:70px;
+ border-radius: 50%;
+ margin-top: 35px;
+
+}
+
+.portrait-2{
+ width: 250px;
+}
+
+
+
 
 #jokes{
  display: flex;
  justify-content: center;
  align-items: center;
  flex-direction: row;
- max-width: 80vw;
+ max-width: 80vw;                         
  margin: auto;
  flex-flow: wrap;
  padding: 20px;
+ margin: 100px;
 }
+
 
 
 #joke{
@@ -45,7 +117,7 @@ justify-content: center;
 
 blockquote{
  position: relative;
- max-width: 80%;
+ max-width: 100%;
  padding: 1.5em 3em 1.4em 3em;
  text-align: center;
  font-size: 1em;
@@ -77,29 +149,23 @@ button{
  justify-content: center;
 }
 
-
-.search-box{
+#chuckimg-1 img{
+ display: block;
  position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%,50%);
- background: #2f3640;
- height: 20px;
- border-radius: 40px;
- padding: 10px;
+ bottom: 0px;
+ right: -15px;
+ width: auto;
+}
+
+#chuckimg-2 img{
+ display: block;
+ position: absolute;
+ bottom: 0px;
+ left: -30px;
 }
 
 
+   
 
 
-input.searh-text{
- border: none;
- background: none;
- outline: none;
- float: left;
- color: rgb(214, 26, 26);
- font-size: 16px;
- transition: 0.4s;
- line-height: 10px;
- width: 200px;
-}
+

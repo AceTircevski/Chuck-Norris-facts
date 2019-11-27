@@ -2,6 +2,7 @@ const container = document.getElementById("jokes");
 const jokeContainer = document.getElementById("joke");
 
 
+
 function random() {
   fetch(`https://api.chucknorris.io/jokes/random`)
     .then(response => {
@@ -13,7 +14,7 @@ function random() {
     });
 }
 
-  
+
 
 
     
