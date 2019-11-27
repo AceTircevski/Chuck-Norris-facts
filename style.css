@@ -10,6 +10,7 @@ font-size: 1em;
 display: inline-table;
 color: white;
 margin-left: 10px;
+position: relative;
 
 }
 
@@ -40,8 +41,7 @@ header{
  z-index:-1;
  top:0;
  left:0;
- width:100%; 
- border-radius: red 2px solid;
+ width: inherit;
  }
 
 
@@ -57,11 +57,9 @@ nav a{
  text-decoration: none;
  text-transform: uppercase;
  color: white;
+ position: relative;
   
 }
-
-
-
 
 
 .nav-image{
@@ -92,8 +90,6 @@ img{
 }
 
 
-
-
 #jokes{
  display: flex;
  justify-content: center;
@@ -102,10 +98,9 @@ img{
  max-width: 80vw;                         
  margin: auto;
  flex-flow: wrap;
- padding: 20px;
- margin: 100px;
-}
 
+ 
+}
 
 
 #joke{
@@ -162,6 +157,52 @@ button{
  position: absolute;
  bottom: 0px;
  left: -30px;
+}
+
+.home__shop {
+ background: url(https://wallpaperplay.com/walls/full/4/1/2/231526.jpg) no-repeat;
+ background-size: 100% auto;
+ position: absolute;
+ margin-top: 200px;
+ padding: 40px 0;
+ width: 100%;
+}
+
+.home__shop h3 {
+ color: #FFC400;
+ font-family: 'Poppins', sans-serif;
+ font-style: normal;
+ font-weight: 700;
+ font-size: 64px;
+ font-size: 4rem;
+ text-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+ text-transform: uppercase;
+ margin-top: 130px;
+}
+
+.container {
+ content: "";
+ display: table;
+ table-layout: fixed;
+ max-width: 1200px;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 0 20px;
+ max-width: 1200px;
+  
+}
+
+.home__shop p {
+ color:  #FFC400;
+ font-family: 'Poppins', sans-serif;
+ font-style: normal;
+ font-weight: 700;
+ font-size: 32px;
+ font-size: 2rem;
+ text-align: center;
+ text-decoration: none;
+ text-transform: uppercase;
+ text-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 
