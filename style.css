@@ -178,7 +178,7 @@ button {
 
 h3 {
   color: #ffc400;
-  font-size: 3rem;
+  font-size: 1rem;
   font-family: "Poppins", sans-serif;
   text-align: center;
   margin: 0;
@@ -191,11 +191,49 @@ h3 {
 .container_bio-nav {
   display: flex;
   align-items: flex-end;
+  background-color: black;
+  margin-top: 28px;
 }
-.container_bio-text {
+.container_bio-text  {
   display: flex;
   flex: 0 1 auto;
   align-items: center;
   align-self: stretch;
   justify-content: center;
+  
+  
+  }
+
+.home__christian-resources {
+ background: url(img/chuck-smile.png) 4% bottom no-repeat, url(img/flag_cross_texture.jpg) center no-repeat;
+ background-size: 195px 278px ,cover;
+ padding: 60px;
+}
+
+.home__christian-resources .cr-container {
+ position: relative;
+ left: 20%;
+ max-width: 800px;
+ width: 80%;
+}
+
+.home__christian-resources .button-primary {
+ border: 2px solid #FFC400;
+ border-radius: 8px;
+ display: inline-block;
+ padding: 10px 30px 6px;
+ color: white;
+ font-family: 'Poppins', sans-serif;
+ font-style: normal;
+ font-weight: 700;
+ font-size: 30px;
+ font-size: 1.875rem;
+ letter-spacing: 0.1em;
+ line-height: 1;
+ text-decoration: none;
+ text-transform: uppercase;
+}
+
+.home__christian-resources p {
+ color: white;
 }
