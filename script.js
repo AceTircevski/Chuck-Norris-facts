@@ -1,8 +1,6 @@
 const container = document.getElementById("jokes");
 const jokeContainer = document.getElementById("joke");
 
-
-
 function random() {
   fetch(`https://api.chucknorris.io/jokes/random`)
     .then(response => {
@@ -10,15 +8,9 @@ function random() {
     })
     .then(json => {
       // Insert the joke string into the predifened HTML container
-      jokeContainer.innerHTML = json.value;
+      jokeContainer.innerHTML = "<blockquote>" + json.value + "</blockquote>";
     });
 }
-
-
-
-
-    
-   
 
 // Fetch all the categories via API
 fetch(`https://api.chucknorris.io/jokes/categories`)
@@ -27,9 +19,6 @@ fetch(`https://api.chucknorris.io/jokes/categories`)
   })
   .then(json => {
     const categories = json;
-
-    
-  
 
     // Creation of buttons dynamically using all the fetched categories
     categories.map(category => {
@@ -46,7 +35,8 @@ fetch(`https://api.chucknorris.io/jokes/categories`)
             })
             .then(json => {
               // Insert the joke string into the predifened HTML container
-              jokeContainer.innerHTML = "<blockquote>" + json.value + "</blockquote>";
+              jokeContainer.innerHTML =
+                "<blockquote>" + json.value + "</blockquote>";
             });
         },
         false
@@ -55,6 +45,4 @@ fetch(`https://api.chucknorris.io/jokes/categories`)
       // Add the newly created dynamic button into the predifened HTML container
       container.appendChild(btn);
     });
-  
-});
-
+  });

@@ -1,212 +1,201 @@
-body{
-margin: 0;
-padding: 0;
-background-color: darkgray;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: darkgray;
 }
 
 h1 {
-background-image: linear-gradient( transparent calc(100% - 5%), #0074ff 0px );
-font-size: 1em;
-display: inline-table;
-color: white;
-margin-left: 10px;
-position: relative;
-
+  background-image: linear-gradient(transparent calc(100% - 5%), #0074ff 0px);
+  font-size: 1em;
+  display: inline-table;
+  color: white;
+  margin-left: 10px;
+  position: relative;
 }
 
-header{
- background-color: rgb(29, 28, 28);
- display: flex;
- align-items: center;
- justify-content: space-between;
- height: 40px;
- font-family: "Kalam", cursive;
- border-bottom: black 2px solid;
- width: 100%;
- position: fixed;
+header {
+  background-color: rgb(29, 28, 28);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  font-family: "Kalam", cursive;
+  border-bottom: black 2px solid;
+  width: 100%;
+  position: fixed;
 }
-
-
 
 .hero {
- position:absolute;
- z-index:-1;
- top:0;
- left:0;
- width:100%; 
- /* height:100vh; */
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* height:100vh; */
 }
 
-.hero-video{
- z-index:-1;
- top:0;
- left:0;
- width: inherit;
- }
-
-
-
-
-nav a{
- font-family: 'Poppins', sans-serif;
- font-style: normal;
- font-weight: 700;
- font-size: 14px;
- font-size: 0.875rem;
- letter-spacing: 0.1rem;
- text-decoration: none;
- text-transform: uppercase;
- color: white;
- position: relative;
-  
+.hero-video {
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: inherit;
 }
 
-
-.nav-image{
-text-align: center;
-
+nav a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: 0.875rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
 }
 
-nav{
- margin: auto;
+.nav-image {
+  flex: 1 0 10%;
 }
 
-
-img{
- width: 150px;
- height: 150px;
+.nav-image img {
+  width: 100%;
+  height: auto;
 }
 
-.portrait{
- width:70px;
- height:70px;
- border-radius: 50%;
- margin-top: 35px;
-
+nav {
+  margin: auto;
 }
 
-.portrait-2{
- width: 250px;
+.portrait {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 35px;
 }
 
-
-#jokes{
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: row;
- max-width: 80vw;                         
- margin: auto;
- flex-flow: wrap;
-
- 
+.portrait-2 {
+  width: 250px;
 }
 
-
-#joke{
-max-width: 100%;
-justify-content: center;
-
-
+#jokes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 80vw;
+  margin: auto;
+  flex-flow: wrap;
 }
 
-blockquote{
- position: relative;
- max-width: 100%;
- padding: 1.5em 3em 1.4em 3em;
- text-align: center;
- font-size: 1em;
- background-color: #e8e5e5;
- border-left: #e03939 8px solid;
- border-radius: 10px;
- 
+#joke {
+  max-width: 100%;
+  justify-content: center;
 }
 
- blockquote::before {
- content: "\201C";
- font-family: arial;
- top: -4px;
- left: 20px;
- font-size: 2em;
- color: #e03939;
- 
+blockquote {
+  position: relative;
+  max-width: 100%;
+  padding: 1.5em 3em 1.4em 3em;
+  text-align: center;
+  font-size: 1em;
+  background-color: #e8e5e5;
+  border-left: #e03939 8px solid;
+  border-radius: 10px;
 }
 
-
-button{
- margin: 0.3em;
- background-color: #e03939;
- color: whitesmoke;
- padding: 1em;
- border-radius: 6px;
- border: none;
- display: flex;
- justify-content: center;
+blockquote::before {
+  content: "\201C";
+  font-family: arial;
+  top: -4px;
+  left: 20px;
+  font-size: 2em;
+  color: #e03939;
 }
 
-#chuckimg-1 img{
- display: block;
- position: absolute;
- bottom: 0px;
- right: -15px;
- width: auto;
+button {
+  margin: 0.3em;
+  background-color: #e03939;
+  color: whitesmoke;
+  padding: 0.8em;
+  border-radius: 6px;
+  border: none;
+  display: flex;
+  justify-content: center;
 }
 
-#chuckimg-2 img{
- display: block;
- position: absolute;
- bottom: 0px;
- left: -30px;
+#chuckimg-1 img {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  right: -16px;
+  width: auto;
+  width: 80px;
+  height: 80px;
 }
 
-.home__shop {
- background: url(https://wallpaperplay.com/walls/full/4/1/2/231526.jpg) no-repeat;
- background-size: 100% auto;
- position: absolute;
- margin-top: 200px;
- padding: 40px 0;
- width: 100%;
+#chuckimg-2 img {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: -20px;
+  width: auto;
+  height: 80px;
 }
 
-.home__shop h3 {
- color: #FFC400;
- font-family: 'Poppins', sans-serif;
- font-style: normal;
- font-weight: 700;
- font-size: 64px;
- font-size: 4rem;
- text-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
- text-transform: uppercase;
- margin-top: 130px;
+.shop {
+  background: url(https://wallpaperplay.com/walls/full/4/1/2/231526.jpg)
+    no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  margin-top: 10px;
+  padding: 40px 0;
+  width: 100%;
 }
 
 .container {
- content: "";
- display: table;
- table-layout: fixed;
- max-width: 1200px;
- margin-left: auto;
- margin-right: auto;
- padding: 0 20px;
- max-width: 1200px;
-  
+  content: "";
+  display: table;
+  table-layout: fixed;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  max-width: 1200px;
 }
 
-.home__shop p {
- color:  #FFC400;
- font-family: 'Poppins', sans-serif;
- font-style: normal;
- font-weight: 700;
- font-size: 32px;
- font-size: 2rem;
- text-align: center;
- text-decoration: none;
- text-transform: uppercase;
- text-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+.container p {
+  color: #ffc400;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+h3 {
+  color: #ffc400;
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin: 0;
+}
 
-   
-
-
-
+.container_bio-intro {
+  display: flex;
+  margin-top: 100px;
+}
+.container_bio-nav {
+  display: flex;
+  align-items: flex-end;
+}
+.container_bio-text {
+  display: flex;
+  flex: 0 1 auto;
+  align-items: center;
+  align-self: stretch;
+  justify-content: center;
+}
