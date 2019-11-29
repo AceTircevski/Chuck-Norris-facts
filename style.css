@@ -28,16 +28,16 @@ header {
 .hero {
   position: absolute;
   z-index: -1;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
   width: 100%;
   /* height:100vh; */
 }
 
 .hero-video {
   z-index: -1;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
  width: 100%;
  position: relative;
 }
@@ -149,8 +149,6 @@ button {
     no-repeat;
   background-size: 100% auto;
   position: absolute;
-  margin-top: 10px;
-  padding: 40px 0;
   width: 100%;
 }
 
@@ -162,7 +160,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
-  max-width: 1200px;
+ 
 }
 
 .container p {
@@ -212,16 +210,15 @@ margin: 30px;
 }
 
 .home__christian-resources {
- background: url(chucknorris11.jpeg) 0% bottom no-repeat, url(img/flag_cross_texture.jpg) center no-repeat;
- background-size: 195px 278px ,cover;
+ background: url(chucknorris11.jpeg) 0% bottom no-repeat;
+ background-size: 350px 350px ,cover;
  
 }
 
 .home__christian-resources .cr-container {
  position: relative;
- left: 20%;
  max-width: 800px;
- width: 80%;
+ width: 100%;
 }
 
 .home__christian-resources .button-primary {
@@ -252,62 +249,10 @@ margin: 30px;
  background-color: #e03939;
 }
 
-.container_footer {
- position: relative;
-}
-.footer-menu {
- float: left;
-}
-
-.footer-menu ul:first-of-type {
-    margin-right: 40px;
-}
-
-.footer-menu ul {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    vertical-align: text-top;
-}
-
-.footer-menu a {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: yellow;
-}
-
-.footer-social {
- right: 0;
- position: absolute;
- top: 50%;
- -webkit-transform: translateY(-50%);
- -ms-transform: translateY(-50%);
- transform: translateY(-50%);
-}
-
-.footer-social a {
-    display: inline-block;
-    background-color: #FFC400;
-    border-radius: 25px;
-    margin-right: 16px;
-    height: 50px;
-    width: 50px;
-    text-decoration: none;
-    -webkit-transition: color 0.25s ease-in-out;
-    -o-transition: color 0.25s ease-in-out;
-    transition: color 0.25s ease-in-out;
-}
 
 
 
-
-
- @media (min-width: 768px){
+ @media (max-width: 768px){
 .container_bio-nav{
 align-items: center;
 /* margin-top: 270px; */
@@ -317,6 +262,13 @@ justify-content: space-between;
 .nav-image{
 flex: 0 10%;
 } 
+.nav a{
+ display:none;
+}
+nav {
+
+    display: none;
+}
 
 .home__christian-resources{
  padding: 40px 40px 40px 40px;
