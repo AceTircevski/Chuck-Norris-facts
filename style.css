@@ -17,7 +17,7 @@ header {
   background-color: rgb(29, 28, 28);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 40px;
   font-family: "Kalam", cursive;
   border-bottom: black 2px solid;
@@ -72,7 +72,9 @@ nav {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  margin-top: 35px;
+  margin-top: 30px;
+  margin-right: 40px
+
 }
 
 .portrait-2 {
@@ -211,7 +213,8 @@ margin: 30px;
 
 .home__christian-resources {
  background: url(chucknorris11.jpeg) 0% bottom no-repeat;
- background-size: 350px 350px ,cover;
+ background-size: auto ,cover;
+ height: 300px;
  
 }
 
@@ -242,11 +245,22 @@ margin: 30px;
  color: white;
 }
 
-.footer_main {
+/* .footer_main {
  background: url(chucknorris12.jpg) center no-repeat, url(chucknorris11-dark.jpeg) repeat;
  background-size: 180px;
  padding: 60px 0 124px;
  background-color: #e03939;
+} */
+
+.footer-container{
+    background-color: rgba(38, 4, 4, 0.88);
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    padding: 55px 35px;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
 }
 
 
@@ -255,7 +269,7 @@ margin: 30px;
  @media (max-width: 768px){
 .container_bio-nav{
 align-items: center;
-/* margin-top: 270px; */
+margin-top: 270px;
 justify-content: space-between;
 
 }
@@ -266,16 +280,17 @@ flex: 0 10%;
  display:none;
 }
 nav {
-
-    display: none;
+ display: none;
 }
 
 .home__christian-resources{
  padding: 40px 40px 40px 40px;
-
  }
+ h1{
+    font-size: 1em;
  
 }
+ }
 
 @media (min-width: 1024px){
     .container_bio-nav{
@@ -288,8 +303,9 @@ nav {
         }
         .home__christian-resources{
             padding:50px;
-           
-   } 
-    
+    } 
+    h1{
+    font-size: 1em;
+    }
     }
         
