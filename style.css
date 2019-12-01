@@ -93,8 +93,8 @@ nav {
   align-items: center;
   flex-direction: row;
   max-width: 80vw;
-  padding: 20px;
   flex-flow: wrap;
+  padding-top: 100px;
 }
 
 #joke {
