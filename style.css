@@ -181,7 +181,7 @@ button {
   color: #ffc400;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight:700;
   font-size: 0.8rem;
   text-align: center;
   text-decoration: none;
@@ -242,11 +242,11 @@ h3 {
 }
 
 .home__christian-resources .button-primary {
-  border: 2px solid #ffc400;
+  border: 2px solid #eb1e03;
   border-radius: 8px;
   display: inline-block;
   padding: 10px 30px 6px;
-  color: white;
+  color: black;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -259,15 +259,12 @@ h3 {
 }
 
 .home__christian-resources p {
-  color: white;
+  color: black;
+  font-size: 1.3rem;
+  
 }
 
-/* .footer_main {
- background: url(chucknorris12.jpg) center no-repeat, url(chucknorris11-dark.jpeg) repeat;
- background-size: 180px;
- padding: 60px 0 124px;
- background-color: #e03939;
-} */
+
 
 .footer-container {
   background-color: rgba(38, 4, 4, 0.88);
@@ -307,8 +304,24 @@ h3 {
   }
   .home__christian-resources {
     padding: 50px;
+    min-height: 70vh;
+    font-size: 2rem;
   }
   h1 {
     font-size: 1em;
   }
+  .shop{
+   min-height: 63vh;
+  }
+  .footer-container{
+    padding: 35px 35px;
+    font-size: 1.2rem;
+  }
+  h3{
+    font-size: 1.1rem;
+  }
+  .button{
+    font-size: 1.1rem;
+  }
+  
 }
