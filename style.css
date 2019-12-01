@@ -258,8 +258,8 @@ h3 {
 }
 
 .home__christian-resources p {
-  color:whitesmoke;
-  font-size: 1.1rem;
+  color:black;
+  font-size: 1rem;
   
 }
 
@@ -315,16 +315,14 @@ h3 {
   }
   .footer-container{
     padding: 35px 35px;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   h3{
     font-size: 1.1rem;
   }
   .button{
     font-size: 1.1rem;
-  }
-  .home__christian-resources p{
-    color: #f60000;
+  
   }
   
 }
