@@ -231,6 +231,7 @@ h3 {
 }
 .home__christian-resources p {
   margin: 0 0 20px 0;
+  font-weight: 700;
 }
 
 .home__christian-resources .cr-container {
@@ -260,21 +261,59 @@ h3 {
 .home__christian-resources p {
   color:black;
   font-size: 1rem;
-  
-}
+ }
 
 
 
 .footer-container {
   background-color: rgba(38, 4, 4, 0.88);
-  height: 90px;
   display: flex;
   flex-direction: column;
   padding: 55px 35px;
   align-items: center;
   text-align: center;
   font-weight: bold;
+  color:yellow;
+  line-height: 0.7em;
 }
+
+.footer-container a{
+ color: yellow;
+}
+
+.portrait-3{
+ height: 70px;
+ width: 70px;
+ border-radius: 50%; 
+}
+
+.blue-icons {
+ display: flex;
+ justify-content:center;
+}
+
+.information {
+ padding: 55px 35px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ text-align: center;
+ background-color: lightblue;
+}
+
+.circles {
+ border: 3px solid #992c29;
+ border-radius: 50%;
+ width: 40px;
+ height: 40px;
+ margin: 5px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+
 
 @media (max-width: 768px) {
   .container_bio-nav {
@@ -314,15 +353,15 @@ h3 {
    min-height: 63vh;
   }
   .footer-container{
-    padding: 35px 35px;
+    padding: 10px 35px;
     font-size: 1rem;
   }
   h3{
-    font-size: 1.1rem;
+    font-size: 0.8rem;
   }
   .button{
     font-size: 1.1rem;
   
-  }
+}
   
 }
