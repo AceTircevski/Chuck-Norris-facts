@@ -218,27 +218,6 @@ button:hover {
   flex-direction: column;
 }
 
-.container {
-  max-width: 1200px;
-  padding: 0 20px;
-  display: flex;
-  justify-content: center;
-  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
-}
-
-.container p {
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 0.8rem;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-}
-
 h3 {
   color: #ffc400;
   font-size: 1.3rem;
