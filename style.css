@@ -2,22 +2,65 @@ body {
   margin: 0;
   padding: 0;
   background-color: darkgray;
+  background: #2193b0; 
+ 
 }
 
-h1 {
-  background-image: linear-gradient(transparent calc(100% - 5%), #0074ff 0px);
+header h1 {
   font-size: 0.8rem;
-  display: inline-table;
+  display: block;
   color: white;
   margin-left: 10px;
   position: relative;
+
 }
+ header h1 ::after{
+ content:'';
+ width: 0%;
+ height: 2px;
+ cursor: pointer;
+ position: absolute;
+ background: royalblue;
+ bottom: 0%; left: 50%;
+ transition: all 500ms ease;
+ background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+ background: linear-gradient(to right, #6dd5ed, #2193b0);
+ transition: all 500ms ease;
+}
+
+ header h1 :hover::after{
+ left: 0%;
+ width: 100%;
+}
+
+
+
+
+nav a::after {
+ content:'';
+ width: 0%;
+ height: 2px;
+ cursor: pointer;
+ position: absolute;
+ background: royalblue;
+ bottom: 0%; left: 50%;
+ transition: all 500ms ease;
+ background-color: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+ background-color: linear-gradient(to right, #6dd5ed, #2193b0);
+
+}
+
+nav a:hover::after{
+ left: 0%;
+ width: 100%;
+}
+   
 
 header {
   background-color: rgb(29, 28, 28);
   display: flex;
   align-items: center;
-  justify-content:space-evenly;
+  justify-content: start;
   height: 40px;
   font-family: "Kalam", cursive;
   border-bottom: black 2px solid;
@@ -26,10 +69,32 @@ header {
   z-index: 1;
 }
 
- 
+header a{
+ padding-left: 20px;
+ padding-right: 10px;
+ font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  
+}
+
+
+nav {
+ font-size: 0.7em;
+ align-items: center;
+ justify-content: space-between;
+    
+}
+   
 
 .hero {
-  min-height: 75vh;
+  min-height: 100vh;
   width: 100%;
   position: relative;
   display: flex;
@@ -44,24 +109,11 @@ header {
 
 .hero-video {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-nav a {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  font-size: 0.875rem;
-  letter-spacing: 0.1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
-  position: relative;
+  top: 100%;
+  left: 100%;
+  min-width: 100%;
+  min-height: 100%;
+ transform: translate(-100%,-100%);
 }
 
 .nav-image {
@@ -69,8 +121,8 @@ nav a {
 }
 
 .nav-image img {
-  width: 100%;
-  height: auto;
+ width: 100%;
+ height: auto;
 }
 
 
@@ -192,6 +244,7 @@ button:hover {
   text-decoration: none;
   text-transform: uppercase;
   text-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 h3 {
@@ -206,10 +259,10 @@ h3 {
   margin-top: auto;
 }
 
-/* .container_bio-intro {
+.container_bio-intro {
   display: flex;
   margin-top: 100px;
-} */
+}
 .container_bio-nav {
   display: flex;
   align-items: flex-end;
@@ -245,7 +298,9 @@ h3 {
   width: 100%;
   padding: 20px;
   text-align: center;
-}
+}      
+
+  
 
 .home__christian-resources .button-primary {
   border: 2px solid #eb1e03;
@@ -279,11 +334,12 @@ h3 {
   text-align: center;
   font-weight: bold;
   color:yellow;
-  line-height: 1.3em;
+ 
 }
 
 .footer-container a{
  color: yellow;
+ text-decoration: none;
 }
 
 .portrait-3{
@@ -334,7 +390,25 @@ h3 {
 }
   
 #myBtn:hover {
- background-color: #555;
+ background-color: rgb(161, 155, 155);
+}
+
+h1::after {
+ content:'';
+ width: 0%;
+ height: 2px;
+ cursor: pointer;
+ position: absolute;
+ background: royalblue;
+ bottom: 0%; left: 50%;
+ transition: all 500ms ease;
+ background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+ background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
+   
+h1:hover::after{
+ left: 0%;
+ width: 100%;
 }
 
   
@@ -346,9 +420,9 @@ h3 {
     align-items: center;
     justify-content: space-between;
   }
-  .nav a {
+  /* .nav a {
     display: none;
-  }
+  } */
   nav {
     display: none;
   }
@@ -375,9 +449,9 @@ h3 {
   h1 {
     font-size: 1em;
   }
-  .shop{
+  /* .shop{
    min-height: 63vh;
-  }
+  } */
   .footer-container{
     padding: 10px 35px;
     font-size: 1rem;
