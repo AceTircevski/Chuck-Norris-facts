@@ -1,9 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: darkgray;
-  background: #2193b0; 
- 
+  background-color: lightgray;
 }
 
 header h1 {
@@ -12,49 +10,47 @@ header h1 {
   color: white;
   margin-left: 10px;
   position: relative;
-
-}
- header h1 ::after{
- content:'';
- width: 0%;
- height: 2px;
- cursor: pointer;
- position: absolute;
- background: royalblue;
- bottom: 0%; left: 50%;
- transition: all 500ms ease;
- background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
- background: linear-gradient(to right, #6dd5ed, #2193b0);
- transition: all 500ms ease;
 }
 
- header h1 :hover::after{
- left: 0%;
- width: 100%;
+header h1 ::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  cursor: pointer;
+  position: absolute;
+  background: royalblue;
+  bottom: 0%;
+  left: 50%;
+  transition: all 500ms ease;
+  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  transition: all 500ms ease;
 }
 
-
-
+header h1 :hover::after {
+  left: 0%;
+  width: 100%;
+}
 
 nav a::after {
- content:'';
- width: 0%;
- height: 2px;
- cursor: pointer;
- position: absolute;
- background: royalblue;
- bottom: 0%; left: 50%;
- transition: all 500ms ease;
- background-color: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
- background-color: linear-gradient(to right, #6dd5ed, #2193b0);
-
+  content: "";
+  width: 0%;
+  height: 2px;
+  cursor: pointer;
+  position: absolute;
+  background: royalblue;
+  bottom: 0%;
+  left: 50%;
+  transition: all 500ms ease;
+  background-color: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+  background-color: linear-gradient(to right, #6dd5ed, #2193b0);
+  background-repeat: no-repeat;
 }
 
-nav a:hover::after{
- left: 0%;
- width: 100%;
+nav a:hover::after {
+  left: 0%;
+  width: 100%;
 }
-   
 
 header {
   background-color: rgb(29, 28, 28);
@@ -69,10 +65,10 @@ header {
   z-index: 1;
 }
 
-header a{
- padding-left: 20px;
- padding-right: 10px;
- font-family: "Poppins", sans-serif;
+header a {
+  padding-left: 20px;
+  padding-right: 10px;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 0.875rem;
@@ -81,17 +77,13 @@ header a{
   text-transform: uppercase;
   color: white;
   position: relative;
-  
 }
-
 
 nav {
- font-size: 0.7em;
- align-items: center;
- justify-content: space-between;
-    
+  font-size: 0.7em;
+  align-items: center;
+  justify-content: space-between;
 }
-   
 
 .hero {
   min-height: 100vh;
@@ -113,7 +105,7 @@ nav {
   left: 100%;
   min-width: 100%;
   min-height: 100%;
- transform: translate(-100%,-100%);
+  transform: translate(-100%, -100%);
 }
 
 .nav-image {
@@ -121,11 +113,9 @@ nav {
 }
 
 .nav-image img {
- width: 100%;
- height: auto;
+  width: 100%;
+  height: auto;
 }
-
-
 
 .portrait {
   width: 70px;
@@ -159,7 +149,7 @@ blockquote {
   padding: 1.5em 3em 1.4em 3em;
   text-align: center;
   font-size: 1em;
-  background-color: #e8e5e5;
+  background-color: #f7eeee;
   border-left: #e03939 8px solid;
   border-radius: 10px;
 }
@@ -185,10 +175,9 @@ button {
 }
 
 button:hover {
- background-color: #555;
- transition-delay: 0.3;
+  background-color: #555;
+  transition-delay: 0.3;
 }
-   
 
 #chuckimg-1,
 #chuckimg-2 {
@@ -232,13 +221,16 @@ button:hover {
 .container {
   max-width: 1200px;
   padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container p {
-  color: #ffc400;
+  color: black;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight:700;
+  font-weight: 700;
   font-size: 0.8rem;
   text-align: center;
   text-decoration: none;
@@ -253,10 +245,18 @@ h3 {
   font-family: "Poppins", sans-serif;
   text-align: center;
   margin: 0;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+h4 {
+  color: #ffc400;
+  font-size: 0.8rem;
 }
 
 .container_shop-intro {
   margin-top: auto;
+}
+.container_shop-intro h3 {
+  color: black;
 }
 
 .container_bio-intro {
@@ -298,9 +298,7 @@ h3 {
   width: 100%;
   padding: 20px;
   text-align: center;
-}      
-
-  
+}
 
 .home__christian-resources .button-primary {
   border: 2px solid #eb1e03;
@@ -319,11 +317,9 @@ h3 {
 }
 
 .home__christian-resources p {
-  color:black;
+  color: black;
   font-size: 1rem;
- }
-
-
+}
 
 .footer-container {
   background-color: rgba(38, 4, 4, 0.88);
@@ -333,97 +329,102 @@ h3 {
   align-items: center;
   text-align: center;
   font-weight: bold;
-  color:yellow;
- 
+  color: yellow;
 }
 
-.footer-container a{
- color: yellow;
- text-decoration: none;
+.footer-container a {
+  color: yellow;
+  text-decoration: none;
 }
 
-.portrait-3{
- height: 70px;
- width: 70px;
- border-radius: 50%; 
+.portrait-3 {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
 }
 
 .blue-icons {
- display: flex;
- justify-content:center;
+  display: flex;
+  justify-content: center;
 }
 
 .information {
- padding: 55px 35px;
- display: flex;
- flex-direction: column;
- align-items: center;
- text-align: center;
- background-color: lightblue;
+  padding: 55px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: lightblue;
 }
 
 .circles {
- border: 3px solid #992c29;
- border-radius: 50%;
- width: 40px;
- height: 40px;
- margin: 5px;
- display: flex;
- justify-content: center;
- align-items: center;
+  border: 3px solid #992c29;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #myBtn {
- display: none;
- bottom: 0px;
- right: 0px;
- z-index: 99;
- font-size: 15px;
- border: none;
- outline: none;
- background-color: #e03939;
- color: #070707;
- cursor: pointer;
- padding: 3px;
- border-radius: 4px;
- font-family: 'Baloo Bhai', cursive;
+  display: none;
+  bottom: 0px;
+  right: 0px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: #e03939;
+  color: #070707;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 4px;
+  font-family: "Baloo Bhai", cursive;
 }
-  
+#myBtn:after {
+  content: " \2191";
+}
+
+#myBtn:before {
+  content: " \2191";
+}
+
 #myBtn:hover {
- background-color: rgb(161, 155, 155);
+  background-color: rgb(161, 155, 155);
 }
 
 h1::after {
- content:'';
- width: 0%;
- height: 2px;
- cursor: pointer;
- position: absolute;
- background: royalblue;
- bottom: 0%; left: 50%;
- transition: all 500ms ease;
- background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
- background: linear-gradient(to right, #6dd5ed, #2193b0);
-}
-   
-h1:hover::after{
- left: 0%;
- width: 100%;
+  content: "";
+  width: 0%;
+  height: 2px;
+  cursor: pointer;
+  position: absolute;
+  background: royalblue;
+  bottom: 0%;
+  left: 50%;
+  transition: all 500ms ease;
+  background-color: -webkit-linear-gradient(to left, #6dd5ed, #2193b0);
+  background-color: linear-gradient(to right, #6dd5ed, #2193b0);
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
-  
+h1:hover::after {
+  left: 0%;
+  width: 100%;
+}
 
-
-
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .container_bio-nav {
     align-items: center;
     justify-content: space-between;
   }
-  /* .nav a {
-    display: none;
-  } */
   nav {
+    padding-left: 50px;
+  }
+  nav a {
     display: none;
   }
 
@@ -433,7 +434,6 @@ h1:hover::after{
   h1 {
     font-size: 0.7em;
   }
-  
 }
 
 @media (max-width: 1024px) {
@@ -449,19 +449,12 @@ h1:hover::after{
   h1 {
     font-size: 1em;
   }
-  /* .shop{
-   min-height: 63vh;
-  } */
-  .footer-container{
+
+  .footer-container {
     padding: 10px 35px;
     font-size: 1rem;
   }
-  h3{
-    font-size: 0.8rem;
+  nav {
+    display: inline-flex;
   }
-  .button{
-    font-size: 1.1rem;
-  
- }
-  
 }
