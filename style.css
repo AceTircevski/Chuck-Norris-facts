@@ -351,7 +351,25 @@ h4 {
   justify-content: center;
 }
 
+.information {
+  padding: 55px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: lightblue;
+}
 
+.circles {
+  border: 3px solid #992c29;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
 
 #myBtn {
   font-size: 15px;
@@ -452,7 +470,7 @@ h5 {
   }
 }
 
-@media (min-width: 768px) {
+
 
 
 
