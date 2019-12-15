@@ -451,7 +451,7 @@ h5 {
   color: orange;
 }
 
-@media (min-width: 700px) {
+@media (max-width: 700px) {
   .menu-toggle {
     display: block;
   }
