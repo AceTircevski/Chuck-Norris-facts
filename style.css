@@ -52,6 +52,7 @@ header ::after {
 
 .site-nav li {
   text-align: center;
+  padding: 30px;
 }
 
 .site-nav li:last-child {
@@ -450,9 +451,13 @@ h5 {
   color: orange;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 700px) {
   .menu-toggle {
     display: block;
+  }
+
+  .site-nav li{
+      padding: 30px;
   }
 
 
