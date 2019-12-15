@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap"
       rel="stylesheet"
@@ -18,21 +19,27 @@
   </head>
   <body>
     <header>
+      <!-- <button onClick="random()">random</button> -->
+      
       <img src="chuck Norris8.jpg" alt="logo" class="portrait" />
-      <h1>Chuck Norris Jokes</h1>
-      <button onClick="random()">random</button>
-      <nav>
-        <a href="https://chucknorris.com/">News</a>
-        <a href="https://chucknorris.com/">Links</a>
-        <a href="https://chucknorris.com/">Filmography</a>
-        <a href="https://chucknorris.com/">Bio</a>
-        <a href="https://chucknorris.com/">Contact</a>
+                  <!-- <h1>Chuck Norris Jokes</h1> -->
+      <nav class="site-nav">
+        <ul>
+          <li><a href="https://chucknorris.com/">News</a></li>
+          <li><a href="https://chucknorris.com/">Links</a></li>
+          <li><a href="https://chucknorris.com/">Filmography</a></li>
+          <li><a href="https://chucknorris.com/">Bio</a></li>
+          <li><a href="https://chucknorris.com/">Contact</a></li>
+        </ul>
       </nav>
+       <div class="menu-toggle">
+          <div class="hamburger">
+          </div>
+        </div>
     </header>
 
-    <!-- <section class="container"> -->
     <section class="hero">
-      <video class="hero-video" autoplay loop muted>
+      <video class="hero-video" autoplay loop muted playsinline>
         <source src="./1012292321-preview.mp4" type="video/mp4" />
         <source src="./videos/SampleVideo_1280x720_1mb.webm" type="video/mp4" />
         <source src="./26934715-preview.mp4" type="video/mp4" />
@@ -40,7 +47,6 @@
       </video>
 
       <div id="jokes"></div>
-
       <div id="joke"></div>
       <div id="chuckimg-1">
         <img src="Chuck Norris3.png" alt="chuck norris" />
@@ -89,45 +95,57 @@
         ></a>
       </div>
     </section>
-    <section class="footer-container">
-      <footer>
-        <img src="chucknorris12.jpg" alt="logo" class="portrait-3" />
-        <h3>Design by Aleksandar Tircevski</h3>
-        <br />for Technigo Bootcamp<br />
-        <br />Contact<br />
-        <a href="mailto: atircevski@gmail.com">atircevski@gmail.com</a>
-        <div information>
-          <div class="blue-icons">
-            <a
-              href="https://www.linkedin.com/in/aleksandar-tircevski-0ab4724b/"
-            >
-              <div class="circles">
-                <img src="linkedin.png" alt="linkedin icon" class="icon" />
-              </div>
-            </a>
-            <a href="https://github.com/AceTircevski">
-              <div class="circles">
-                <img src="github.png" alt="github icon" class="icon" />
-              </div>
-            </a>
-            <a href="#">
-              <div class="circles">
-                <img
-                  src="stackoverflow.png"
-                  alt="stack overflow icon"
-                  class="icon"
-                />
-              </div>
-            </a>
-          </div>
+    <footer class="contact" role="contentinfo">
+      <p id="contact-text">CONTACT</p>
+      <h5>Design by Aleksandar Tircevski</h5>
+      <p>for Technigo Boot Camp</p>
+      <p>+46 704 56 55 56</p>
+      <p>atircevski@gmail.com</p>
+      <div class="circles-red">
+        <div class="circle-red">
+          <a
+            href="https://www.linkedin.com/in/aleksandar-tircevski-0ab4724b/"
+            target="_blank"
+          >
+            <img src="linkedin.png" alt="LinkedIn icon" class="icon-red" />
+          </a>
         </div>
-      </footer>
+        <div class="circle-red">
+          <a href="https://github.com/AceTircevski/" target="_blank">
+            <img src="github.png" alt="GitHub icon" class="icon-red" />
+          </a>
+        </div>
+        <div class="circle-red">
+          <a
+            href="https://play.google.com/store/apps/details?id=com.whatsapp/"
+            target="_blank"
+          >
+            <img src="whatsapp.png" alt="whatsapp icon" class="icon-red" />
+          </a>
+        </div>
+
+        <div class="circle-red">
+          <a
+            href="https://www.facebook.com/aleksandar.tircevski"
+            target="_blank"
+          >
+            <img src="facebook.png" alt="facebook icon" class="icon-red" />
+          </a>
+        </div>
+      </div>
+
       <div id="mybutton">
-        <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <button
+          onclick="topFunction()"
+          id="myBtn"
+          title="Go to top"
+          style="display: block;"
+        >
           Jump To Top
         </button>
       </div>
-    </section>
+    </footer>
+
     <script src="./script.js" type="text/javascript"></script>
   </body>
 </html>

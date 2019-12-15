@@ -4,80 +4,114 @@ body {
   background-color: lightgray;
 }
 
-header h1 {
-  font-size: 0.8rem;
-  display: block;
-  color: white;
-  margin-left: 10px;
-  position: relative;
-}
-
-header h1 ::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  cursor: pointer;
-  position: absolute;
-  background: royalblue;
-  bottom: 0%;
-  left: 50%;
-  transition: all 500ms ease;
-  background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
-  background: linear-gradient(to right, #6dd5ed, #2193b0);
-  transition: all 500ms ease;
-}
-
-header h1 :hover::after {
-  left: 0%;
+.container-1 {
   width: 100%;
+  max-width: 1000px;
 }
 
-nav a::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  cursor: pointer;
-  position: absolute;
-  background: royalblue;
-  bottom: 0%;
-  left: 50%;
-  transition: all 500ms ease;
-  background-color: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
-  background-color: linear-gradient(to right, #6dd5ed, #2193b0);
-  background-repeat: no-repeat;
-}
 
-nav a:hover::after {
-  left: 0%;
-  width: 100%;
-}
 
 header {
-  background-color: rgb(29, 28, 28);
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  height: 40px;
-  font-family: "Kalam", cursive;
-  border-bottom: black 2px solid;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-}
-
-header a {
-  padding-left: 20px;
-  padding-right: 10px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 0.875rem;
-  letter-spacing: 0.1rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: white;
+  background: rgba(26, 37, 44, 0.81);
+  color: #ebebd3;
+  padding: 1em 0;
   position: relative;
 }
+
+header ::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.logo {
+  float: left;
+}
+
+.site-nav {
+  position: absolute;
+  background-color: rgba(29, 1, 1, 0.68);
+  top: 100%;
+  clip-path: circle(0px at top right);
+  transition: all ease-in-out 900ms;
+  right: 0%;
+  left: 0;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+.site-nav--open {
+  clip-path: circle(100%);
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav li {
+  text-align: center;
+}
+
+.site-nav li:last-child {
+  border-bottom: none;
+}
+
+.site-nav a {
+  color: #ebebd3;
+  text-decoration: none;
+
+  
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+.site-nav a :hover,
+.site-nav a:focus {
+  background: #e4b363;
+  color: #464655;
+}
+
+.menu-toggle {
+  position: absolute;
+  right: 0.5em;
+  top: 1.9em;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background: #ebebd3;
+  height: 3px;
+  width: 1.5em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+  float: right;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+.open.hamburger {
+  transform: rotate(45deg);
+}
+
+.open.hamburger::before {
+  opacity: 0;
+}
+
+.open.hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+}
+
 
 nav {
   font-size: 0.7em;
@@ -101,11 +135,14 @@ nav {
 
 .hero-video {
   position: absolute;
-  top: 100%;
-  left: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
-  transform: translate(-100%, -100%);
+  width: auto;
+  height: auto;
+  opacity: 0.1;
 }
 
 .nav-image {
@@ -118,11 +155,11 @@ nav {
 }
 
 .portrait {
-  width: 70px;
-  height: 70px;
+  width: auto;
+  height: 50px;
   border-radius: 50%;
-  margin-top: 30px;
   margin-right: 40px;
+  margin-top: -15px;
 }
 
 .portrait-2 {
@@ -136,6 +173,7 @@ nav {
   flex-direction: row;
   max-width: 80vw;
   flex-flow: wrap;
+  margin-top: 150px;
 }
 
 #joke {
@@ -300,70 +338,37 @@ h4 {
   font-size: 1rem;
 }
 
-.footer-container {
-  background-color: rgba(38, 4, 4, 0.88);
-  display: flex;
-  flex-direction: column;
-  padding: 10px 35px;
-  align-items: center;
-  text-align: center;
-  font-weight: bold;
-  color: yellow;
-}
-
-.footer-container a {
-  color: yellow;
-  text-decoration: none;
-}
 
 .portrait-3 {
   height: 70px;
   width: 70px;
   border-radius: 50%;
+  margin-top: 2vh;
 }
 
-.blue-icons {
+/* .blue-icons {
   display: flex;
   justify-content: center;
 }
 
-.information {
-  padding: 55px 35px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: lightblue;
-}
 
-.circles {
-  border: 3px solid #992c29;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  margin: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 #myBtn {
-  display: none;
-  bottom: 0px;
-  right: 0px;
-  z-index: 99;
   font-size: 15px;
-  border: none;
-  outline: none;
   background-color: #e03939;
   color: #070707;
   cursor: pointer;
   padding: 3px;
   border-radius: 4px;
   font-family: "Baloo Bhai", cursive;
+  margin-bottom: 2vh;
 }
 #myBtn:after {
   content: " \2191";
+}
+#mybutton {
+  display: flex;
+  justify-content: center;
 }
 
 #myBtn:before {
@@ -394,46 +399,62 @@ h1:hover::after {
   left: 0%;
   width: 100%;
 }
+.contact {
+  background: rgb(0, 0, 0);
+  color: white;
+  padding-top: 10px;
+}
 
-@media (max-width: 480px) {
-  .container_bio-nav {
-    align-items: center;
-    justify-content: space-between;
-  }
-  nav {
-    padding-left: 50px;
-  }
-  nav a {
-    display: none;
+#contact-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.contact p {
+  text-align: center;
+  color: orange;
+  text-shadow: red;
+}
+
+.circles-red {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-red {
+  height: 24px;
+  padding: 20px;
+  width: 24px;
+}
+
+h5 {
+  text-align: center;
+  color: orange;
+}
+
+@media (max-width: 500px) {
+  .menu-toggle {
+    display: block;
   }
 
-  .home__christian-resources {
-    padding: 40px 40px 40px 40px;
+
+  .site-nav a {
+    padding: 30px;
+    font-size: 1.9em;
   }
-  h1 {
-    font-size: 0.7em;
+
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: transparent;
+  }
+  .shop{
+    min-height: 72vh;
   }
 }
 
-@media (max-width: 1024px) {
-  .container_bio-nav {
-    align-items: center;
-    justify-content: space-between;
-  }
-  .home__christian-resources {
-    padding: 50px;
-    min-height: 70vh;
-    font-size: 2rem;
-  }
-  h1 {
-    font-size: 1em;
-  }
+@media (min-width: 768px) {
 
-  .footer-container {
-    padding: 10px 35px;
-    font-size: 1rem;
-  }
-  nav {
-    display: inline-flex;
-  }
-}
+
+
+
+ 
