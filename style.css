@@ -7,6 +7,7 @@ body {
 .container-1 {
   width: 100%;
   max-width: 1000px;
+  margin: auto 0;
 }
 
 
@@ -21,7 +22,7 @@ header {
 header ::after {
   content: "";
   clear: both;
-  display: block;
+  /* display: block; */
 }
 
 .logo {
@@ -39,20 +40,22 @@ header ::after {
   z-index: 1;
   min-height: 100vh;
 }
-
+ 
 .site-nav--open {
   clip-path: circle(100%);
 }
 
 .site-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ line-height: 50px;
+ }
+
 
 .site-nav li {
   text-align: center;
-  padding: 30px;
+  padding: 3px;
 }
 
 .site-nav li:last-child {
@@ -128,6 +131,7 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .hero > * {
@@ -453,31 +457,33 @@ h5 {
 
 @media (min-width: 700px) {
   .menu-toggle {
-    display: block;
+    display: none;
   }
 
-  .site-nav li{
-      padding: 30px;
+  .site-nav {
+     height: auto;
+     float: right;
+     background: none;
+     clip-path: initial;
   }
 
 
-  .site-nav a {
-    padding: 30px;
-    font-size: 1.9em;
+  .site-nav li {
+  display: inline-block;
+  border: none;
   }
 
-  .site-nav a:hover,
-  .site-nav a:focus {
-    background: transparent;
-  }
-  .shop{
-    min-height: 72vh;
+  .site-nav a{
+      padding: 0;
   }
 }
 
+  
 
-
-
-
-
- 
+@media (max-width: 1024px){
+    .site-nav ul{
+    margin-top: -60px;
+    float: right;
+    margin-right: 20px;
+    }
+}
