@@ -13,7 +13,7 @@ body {
 
 .container-1 button{
  position: absolute;
- margin-left: 100px;
+ margin-left: 160px;
 }
 
 
@@ -70,7 +70,7 @@ header ::after {
 }
 
 .site-nav a {
-  color: #00adff;
+  color: #ccc1e7;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1em;
@@ -90,6 +90,7 @@ header ::after {
   cursor: pointer;
 }
 
+
 .hamburger,
 .hamburger::before,
 .hamburger::after {
@@ -97,7 +98,7 @@ header ::after {
   display: block;
   background: #ebebd3;
   height: 3px;
-  width: 1.5em;
+  width: 1.75em;
   border-radius: 3px;
   transition: all ease-in-out 500ms;
   float: right;
@@ -119,7 +120,8 @@ header ::after {
 }
 
 .open.hamburger::after {
-  transform: translateY(-3px) rotate(-90deg);
+  transform: translateY(-3px) rotate (-90deg);
+
 }
 
 
@@ -176,10 +178,9 @@ header ::after {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  max-width: 80vw;
+  max-width: 100vw;
   flex-flow: wrap;
-  margin-top: 50px;
-}
+ }
 
 #joke {
   max-width: 100%;
@@ -434,6 +435,7 @@ h5 {
   .menu-toggle {
     display: block;
   }
+  
 
   .site-nav {
     height: auto;
