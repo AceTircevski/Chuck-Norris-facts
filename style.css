@@ -58,7 +58,8 @@ header ::after {
 
 .site-nav li {
   text-align: center;
-  padding: 3px;
+  padding: 0;
+  margin: 0;
 }
 
 .site-nav li:last-child {
@@ -71,7 +72,10 @@ header ::after {
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 700;
+  font-family: 'Poppins', sans-serif;
 }
+
+
 
 .site-nav a :hover,
 .site-nav a:focus {
@@ -84,6 +88,10 @@ header ::after {
   right: 0.5em;
   top: 1.9em;
   cursor: pointer;
+}
+
+h3{
+ color: yellow;
 }
 
 
