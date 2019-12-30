@@ -4,25 +4,22 @@ body {
   background-color: lightgray;
 }
 
-.container-1 {
-  width: 100%;
-  max-width: 1000px;
-  margin: auto 0;
-  height: 30px;
-}
-
-.container-1 button{
- position: absolute;
- margin-left: 160px;
-}
-
-
 
 header {
   background: #1D1B1B;
-  color: #404040;
+  color: whitesmoke;
   padding: 1em 0;
   position: relative;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+header h1{
+ display: block;
+ font-size: 1em;
+ margin-right: auto;
+ white-space: nowrap;
 }
 
 header ::after {
@@ -129,7 +126,6 @@ h3{
 }
 
 
-
 .hero {
   min-height: 100vh;
   width: 100%;
@@ -171,7 +167,7 @@ h3{
   height: 70px;
   border-radius: 50%;
   margin-right: 40px;
-  margin-top: -15px;
+  margin-top: 15px;
   opacity: 0.6;
 }
 
