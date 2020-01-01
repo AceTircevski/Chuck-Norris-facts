@@ -22,6 +22,13 @@ header h1{
  white-space: nowrap;
 }
 
+header h1:hover{
+ color: yellow;
+ cursor: pointer;
+}
+
+
+
 header ::after {
   content: "";
   clear: both;
@@ -77,7 +84,7 @@ header ::after {
 .site-nav a :hover,
 .site-nav a:focus {
   background: #e4b363;
-  color: #464655;
+  color: red;
 }
 
 .menu-toggle {
@@ -87,9 +94,6 @@ header ::after {
   cursor: pointer;
 }
 
-h3{
- color: yellow;
-}
 
 
 .hamburger,
@@ -143,7 +147,7 @@ h3{
 
 .hero-video {
   position: absolute;
-   top: 50%;
+  top: 50%;
   left: 50%; 
   transform: translate(-50%, -50%);
   min-width: 100%;
@@ -378,29 +382,27 @@ h4 {
   background-color: rgb(161, 155, 155);
 }
 
-h1::after {
+header h1::after {
   content: "";
   width: 0%;
   height: 2px;
   cursor: pointer;
-  position: absolute;
   background: royalblue;
-  bottom: 0%;
-  left: 50%;
-  transition: all 500ms ease;
+  bottom: 35%;
+  left: 1%;
+  transition: all 700ms ease;
   background-color: -webkit-linear-gradient(to left, #6dd5ed, #2193b0);
   background-color: linear-gradient(to right, #6dd5ed, #2193b0);
   background-repeat: no-repeat;
-  cursor: pointer;
 }
 
-h1:hover::after {
-  left: 0%;
+header h1:hover::after {
   width: 100%;
+  right: 1%;
+  position: relative;
 }
 .contact {
   background: rgb(0, 0, 0);
-  color: white;
   padding-top: 10px;
 }
 
@@ -412,7 +414,6 @@ h1:hover::after {
 .contact p {
   text-align: center;
   color: orange;
-  text-shadow: red;
 }
 
 .circles-red {
@@ -435,6 +436,9 @@ h5 {
   .menu-toggle {
     display: block;
   }
+  header h1{
+     display: none;
+  }
   
 
   .site-nav {
@@ -453,17 +457,17 @@ h5 {
 }
 
 @media (min-width:1024px){
-     .menu-toggle {
+    .menu-toggle {
      display: none;
    }
    .site-nav--open{
      z-index: 1;
-   }
+}
    .site-nav{
      clip-path: initial;
      background: none;
      z-index: 1;
-   }
+}
    .site-nav ul {
     margin: 0;
     list-style: none;
@@ -472,12 +476,12 @@ h5 {
     justify-content:center;
     margin-top: -60px;
     
- }
- .hero{
-    z-index: 1;
- }
- .container-1{
-     min-height: 0.5vh;
+}
+  .hero{
+   z-index: 1;
+}
+   header h1{
+  display: none;
  }
 }
 
