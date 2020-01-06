@@ -108,16 +108,16 @@ header ::after {
 .hamburger::after {
   transform: translateY(3px);
 }
-.open.hamburger {
-  transform: rotate(45deg);
+.open .hamburger {
+  background-color: transparent;
 }
 
-.open.hamburger::before {
-  opacity: 0;
+.open .hamburger::before {
+  transform: translateY(-3px) rotate(45deg);
 }
 
-.open.hamburger::after {
-  transform: translateY(-3px) rotate (-90deg);
+.open .hamburger::after {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
 .hero {
